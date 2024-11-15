@@ -1,0 +1,23 @@
+---
+// src/pages/[...404].astro
+
+// Cambiar el código de estado a 401 en lugar de 404
+Astro.response.status = 401;
+ Astro.response.headers.set("WWW-Authenticate", "Basic realm='Access to the site'");
+ Astro.response.headers.set("Content-Type", "text/html");
+---
+
+<meta name="robots" content="noindex, follow">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>401 - No Autorizado</title>
+</head>
+<body>
+  <h1>401 - No autorizado</h1>
+  <p>No tienes permiso para acceder a esta página o el recurso no existe.</p>
+</body>
+</html>

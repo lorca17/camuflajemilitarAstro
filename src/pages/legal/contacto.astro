@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Basic.astro';
+
+const pageTitle = "Contáctanos - Deneopreno.com";
+const pageDescription = "Ponte en contacto con nosotros para cualquier consulta, sugerencia o soporte técnico en Deneopreno.com";
+---
+
+<meta name="robots" content="noindex, follow">
+
+<Layout title={pageTitle} description={pageDescription}>
+
+    <h1>Contáctanos</h1>
+
+    <p>¿Tienes alguna pregunta, necesitas ayuda para elegir el producto perfecto o deseas dejarnos una sugerencia? 
+    En <strong>deneopreno.com</strong> estamos aquí para ayudarte. Completa el formulario a continuación y uno de nuestros 
+    representantes se pondrá en contacto contigo lo antes posible.</p>
+
+    <form action="../api/enviar-formulario" method="POST" style="max-width: 600px; margin: 20px 0;">
+        <div style="margin-bottom: 15px;">
+            <label for="nombre" style="display: block; font-weight: bold;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px;"/>
+        </div>
+    
+        <div style="margin-bottom: 15px;">
+            <label for="email" style="display: block; font-weight: bold;">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;"/>
+        </div>
+    
+        <div style="margin-bottom: 15px;">
+            <label for="mensaje" style="display: block; font-weight: bold;">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 8px;"></textarea>
+        </div>
+    
+        <button type="submit" style="padding: 10px 20px; background-color: #0073e6; color: white; border: none; cursor: pointer;">
+            Enviar Mensaje
+        </button>
+    </form>
+    
+
+    <h2>También puedes encontrarnos en redes sociales:</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/deneopreno" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/deneopreno" target="_blank">Instagram</a></li>
+        <li><a href="https://www.twitter.com/deneopreno" target="_blank">Twitter</a></li>
+    </ul>
+
+</Layout>

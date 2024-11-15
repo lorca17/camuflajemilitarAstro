@@ -1,0 +1,10 @@
+---
+// src/pages/[...404].astro
+
+// Cambiar el código de estado a 401 en lugar de 404
+//Astro.response.status = 401;
+// Astro.response.headers.set("WWW-Authenticate", "Basic realm='Access to the site'");
+// Astro.response.headers.set("Content-Type", "text/html");
+// Astro.response.status = 401;
+return Astro.redirect("/401", "301");
+---

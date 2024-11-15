@@ -1,0 +1,45 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <header>
+        <h1>Bienvenidos a CamuflajeMilitar.com</h1>
+    </header>
+
+    <section>
+        <p>En <strong>CamuflajeMilitar.com</strong> somos apasionados del camuflaje y el equipo táctico. Nos especializamos en ofrecer productos de alta calidad diseñados para quienes buscan rendimiento, resistencia y precisión en sus actividades al aire libre, entrenamiento táctico, o misiones de alto nivel. Con una amplia gama de productos que van desde ropa y accesorios hasta equipo especializado, somos tu aliado de confianza en el mundo del camuflaje militar.</p>
+    </section>
+
+    <section>
+        <h2>¿Qué Ofrecemos?</h2>
+        <ul>
+            <li><strong>Ropa de Camuflaje:</strong> Diseños y patrones que se adaptan a distintos entornos, desde bosques y desiertos hasta condiciones urbanas y montañosas.</li>
+            <li><strong>Accesorios Tácticos:</strong> Mochilas, chalecos, cinturones y todo el equipo necesario para mantenerte preparado y seguro.</li>
+            <li><strong>Equipos de Supervivencia:</strong> Kits de primeros auxilios, herramientas de emergencia y más para enfrentarte a cualquier situación.</li>
+            <li><strong>Calzado Resistente:</strong> Botas tácticas y calzado especializado para soportar los terrenos más exigentes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>¿Por Qué Elegirnos?</h2>
+        <p>En <strong>CamuflajeMilitar.com</strong> nos enfocamos en ofrecer productos que cumplen con los más altos estándares de calidad y durabilidad. Trabajamos con marcas líderes en el mercado para asegurar que cada artículo cumpla con las exigencias de nuestros clientes. Tanto si eres un profesional como si eres un aficionado al aire libre, nuestro catálogo tiene lo que necesitas.</p>
+    </section>
+
+    <footer>
+        <p>Descubre todo lo que tenemos para ofrecer en <strong>CamuflajeMilitar.com</strong> y equipa tus aventuras con lo mejor en camuflaje y tecnología militar.</p>
+    </footer>
+    </main>
+    <Footer />
+  </body>
+</html>
